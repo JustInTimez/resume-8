@@ -122,12 +122,12 @@ h1 {
   text-shadow: black 1px 1px 1px;
 }
 
-#digitalresume {
+.digitalResume {
   font-size: 20px;
   text-shadow: black 1px 1px 1px;
 }
 
-#softwarestudent {
+.softwarestudent {
   font-size: 25px;
   font-weight: bold;
   font-style: italic;
@@ -135,7 +135,7 @@ h1 {
   text-shadow: black 1px 1px 1px;
 }
 
-#introMeText {
+.introMeText {
   font-size: 17px;
   padding-left: 50px;
   padding-right: 50px;
