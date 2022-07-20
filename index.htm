@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="static/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="static/images/favicon/site.webmanifest">
   <title>Justin's Digital Resume! v2.0</title>
-  <meta name="description" content="Coded my own CV site with HTML and CSS! Picture control, ...">
-  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <meta name="description" content="Coded my own CV site with HTML and CSS! Picture control, media queries, ...">
+  <link rel="stylesheet" href="static/css/style.css" type="text/css">
 </head>
 
 <body>
@@ -29,25 +29,25 @@
   <header id="header">
     <h1>Justin Oosthuizen</h1>
     <picture id="headshot-img">
-      <source media="(max-width: 640px)" srcset="images/Me-small.jpg">
+      <source media="(max-width: 640px)" srcset="static/images/Me-small.jpg" alt="Justin and vape smoke small">
       </source>
-      <source media="(max-width: 1240px)" srcset="images/Me-med.jpg">
+      <source media="(max-width: 1240px)" srcset="static/images/Me-med.jpg" alt="Justin and vape smoke medium">
       </source>
-      <img src="images/Me-1920.jpg" alt="Justin and vape smoke or 'clouds' as they say">
+      <img src="static/images/Me-1920.jpg" alt="Justin and vape smoke or 'clouds' as they say">
     </picture>
-    <p id="digitalresume"><em>Digital Resume</em> of a</p>
-    <p id="softwarestudent">Software Engineering Student</p>
+    <p class="digitalResume"><em>Digital Resume</em> of a</p>
+    <p class="softwarestudent">Software Engineering Student</p>
     <hr class="introMeLine">
-    <p id="introMeText">Hi! ~ Currently, I'm studying Software Engineering. I'd like to go deeper into Backend
+    <p class="introMeText">Hi! ~ Currently, I'm studying Software Engineering. I'd like to go deeper into Backend
       systems and languages to broaden my skill set even further!
       When I'm not learning or working, I enjoy meeting up with friends, gaming, and the occasional walk or run!
     </p>
-    <p id="introMeText"><strong>Have a look below to find out more!</strong></p>
+    <p class="introMeText"><strong>Have a look below to find out more!</strong></p>
   </header>
   <main>
     <section id="content">
       <article>
-        <h2 id="exp-heading" class="exp-heading">Work Experience</h2>
+        <h2 class="exp-heading">Work Experience</h2>
         <hr>
         <div class="workHeadingDuration">
           <h3>Cape Business Online</h3>
@@ -83,7 +83,7 @@
         </ol>
       </article>
       <article>
-        <h2 id="education" class="exp-heading">Education</h2>
+        <h2 class="exp-heading">Education</h2>
         <hr>
         <div class="workHeadingDuration">
           <h3><a href="https://www.codespace.co.za/courses/software-engineering/" target="_blank">CodeSpace Academy</a>
@@ -132,7 +132,7 @@
         <div class="rowSkillsInt">
           <div class="column">
             <p class="skillsLeft"><b>Skills:</b></p>
-            <ol id="skill-list">
+            <ol class="skill-list">
               <li>Search Engine Optimization</li>
               <li>WordPress</li>
               <li>Google Suite</li>
@@ -141,7 +141,7 @@
           </div>
           <div class="column">
             <p class="skillsLeft"><b>Interests:</b></p>
-            <ol id="skill-list">
+            <ol class="skill-list">
               <li>Gaming</li>
               <li>Coding</li>
               <li>Reading</li>
@@ -156,11 +156,11 @@
   <footer>
     <h2 id="contact">Contact</h2>
     <a href="https://www.linkedin.com/in/justin-oosthuizen-7a49b887/" target="_blank"><img
-        src="images/socials/LinkedIn_black.png" alt="LinkedIn Logo" width="37px" height="37px"></a>
-    <a href="https://github.com/JustInTimez/" target="_blank"><img src="images/socials/Github_black.png"
+        src="static/images/socials/LinkedIn_black.png" alt="LinkedIn Logo" width="37px" height="37px"></a>
+    <a href="https://github.com/JustInTimez/" target="_blank"><img src="static/images/socials/Github_black.png"
         alt="Github Logo" width="37px" height="37px"></a>
     <a href="https://www.youtube.com/channel/UCRD8-wLVCJtLcrR1DqE8BkA" target="_blank"><img
-        src="images/socials/Youtube_black.png" alt="Youtube Logo" width="37px" height="37px"></a>
+        src="static/images/socials/Youtube_black.png" alt="Youtube Logo" width="37px" height="37px"></a>
   </footer>
 </body>
 
