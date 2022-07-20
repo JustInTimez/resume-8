@@ -200,8 +200,8 @@ h3 {
 .skillPara {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: justify;
-  padding-right: 15px;
-  padding: 15px;
+  padding-right: 20px;
+  padding: 20px;
 }
 
 /* Media queries for responsive design */
@@ -223,6 +223,9 @@ h3 {
    .keyResponsi {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, 'Arial Narrow', Arial, sans-serif, Courier, monospace, Cochin, Georgia, Times, 'Times New Roman', serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
+   }
+   .rowSkillsInt {
+    flex-flow: column wrap;
    }
 
 } 
