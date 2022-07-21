@@ -87,9 +87,19 @@ li a:visited {
 .column {
   margin-left: 0px;
   margin-right: 0px;
-  width: 30%;
+  width: auto;
 }
 
+
+.socialIconContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#githubIcon {
+    margin-left: 35px;
+    margin-right: 35px;
+}
 /* Heading fonts etc */
 
 #menu-heading {
@@ -206,8 +216,8 @@ h3 {
 
 /* Media queries for responsive design */
 
-/* Small devices (550px and up) */
-@media only screen and (max-width: 550px) {
+/* Small devices (437px and up) */
+@media (max-width: 550px) {
    .workHeadingDuration {
     text-align: center;
     margin-bottom: -13px;
@@ -226,21 +236,38 @@ h3 {
    }
    .rowSkillsInt {
     flex-flow: column wrap;
+    justify-content: center;        
    }
 
 } 
 
 /* Medium devices (768px and up) */
-@media only screen and (max-width: 768px) {
-   
+@media (max-width: 768px) {
+    .workHeadingDuration {
+    text-align: center;
+    margin-bottom: -13px;
+    width: auto;
+    gap: 0;
+   }
+   .roleContainer {
+    justify-content: center;
+   }
+   .titleRole:hover {
+    margin-left: 0;
+   }
+   .keyResponsi {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, 'Arial Narrow', Arial, sans-serif, Courier, monospace, Cochin, Georgia, Times, 'Times New Roman', serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+   }
+
 } 
 
 /* Large devices (992px and up) */
-@media only screen and (max-width: 992px) {
+@media (max-width: 992px) {
    
 } 
 
 /* Extra large devices (1200px and up) */
-@media only screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
    
 }
