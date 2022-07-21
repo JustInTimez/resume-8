@@ -90,6 +90,16 @@ li a:visited {
   width: auto;
 }
 
+
+.socialIconContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#githubIcon {
+    margin-left: 35px;
+    margin-right: 35px;
+}
 /* Heading fonts etc */
 
 #menu-heading {
