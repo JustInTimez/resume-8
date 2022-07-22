@@ -2,12 +2,13 @@
   box-sizing: border-box;
 }
 
-#headshot-img {
-  width: 100%;
+#justinImage {
+  max-width: 100%;
+  height: auto;
 }
 
-body {
-  /* max-width: 1240px; */
+.mainBody {
+  max-width: 1240px;
   margin: auto;
   overflow-x: hidden;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -28,7 +29,7 @@ body {
 }
 
 #content {
-  position: static;
+  margin-left: 30px;
 }
 
 .footer {
@@ -75,13 +76,16 @@ li a:visited {
 
 .introMeLine {
   color: white;
-  width: 500px;
+  width: 80%;
+}
+
+.bodyLine2 {
+  width: 80%;
 }
 
 .rowSkillsInt {
   display: flex;
   justify-content: space-around;
-
 }
 
 .column {
@@ -90,16 +94,16 @@ li a:visited {
   width: auto;
 }
 
-
 .socialIconContainer {
   display: flex;
   justify-content: center;
 }
 
 #githubIcon {
-    margin-left: 35px;
-    margin-right: 35px;
+  margin-left: 35px;
+  margin-right: 35px;
 }
+
 /* Heading fonts etc */
 
 #menu-heading {
@@ -177,10 +181,8 @@ h3 {
 }
 
 .workHeadingDuration {
-  margin-bottom: -25px;
   width: fit-content;
   display: flex;
-  flex-flow: column wrap;
   gap: 20px;
 }
 
@@ -196,7 +198,6 @@ h3 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #997716;
   color: white;
-  margin-left: 30px;
   border: 3px solid black;
   width: fit-content;
   padding: 5px;
@@ -216,58 +217,81 @@ h3 {
 
 /* Media queries for responsive design */
 
-/* Small devices (437px and up) */
-@media (max-width: 550px) {
-   .workHeadingDuration {
+/* Small devices (437px and below) */
+@media (max-width: 437px) {
+  .workHeadingDuration {
     text-align: center;
     margin-bottom: -13px;
     width: auto;
     gap: 0;
-   }
-   .roleContainer {
+  }
+
+  .roleContainer {
     justify-content: center;
-   }
-   .titleRole:hover {
+  }
+
+  .titleRole:hover {
     margin-left: 0;
-   }
-   .keyResponsi {
+  }
+
+  .keyResponsi {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, 'Arial Narrow', Arial, sans-serif, Courier, monospace, Cochin, Georgia, Times, 'Times New Roman', serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
-   }
-   .rowSkillsInt {
-    flex-flow: column wrap;
-    justify-content: center;        
-   }
+  }
+}
 
-} 
-
-/* Medium devices (768px and up) */
+/* Medium devices (768px and below) */
 @media (max-width: 768px) {
-    .workHeadingDuration {
+  .workHeadingDuration {
     text-align: center;
     margin-bottom: -13px;
     width: auto;
     gap: 0;
-   }
-   .roleContainer {
+  }
+
+  .roleContainer {
     justify-content: center;
-   }
-   .titleRole:hover {
+  }
+
+  .titleRole:hover {
     margin-left: 0;
-   }
-   .keyResponsi {
+  }
+
+  .keyResponsi {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, 'Arial Narrow', Arial, sans-serif, Courier, monospace, Cochin, Georgia, Times, 'Times New Roman', serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
-   }
+  }
 
-} 
+  .rowSkillsInt {
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+}
 
-/* Large devices (992px and up) */
+/* Large devices (992px and below) */
 @media (max-width: 992px) {
-   
-} 
+  .workHeadingDuration {
+    text-align: center;
+    margin-bottom: -13px;
+    width: auto;
+    gap: 0;
+  }
 
-/* Extra large devices (1200px and up) */
-@media (max-width: 1200px) {
-   
+  .roleContainer {
+    justify-content: center;
+  }
+
+  .titleRole:hover {
+    margin-left: 0;
+  }
+
+  .keyResponsi {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, 'Arial Narrow', Arial, sans-serif, Courier, monospace, Cochin, Georgia, Times, 'Times New Roman', serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+  }
+
+  .rowSkillsInt {
+    display: flex;
+    justify-content: space-around;
+  }
 }
