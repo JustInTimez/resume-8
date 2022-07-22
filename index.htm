@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="static/css/style.css" type="text/css">
 </head>
 
-<body>
+<body class="mainBody">
   <div id="menu-div">
     <nav>
       <h2 id="menu-heading">Menu</h2>
@@ -29,11 +29,11 @@
   <header class="header">
     <h1>Justin Oosthuizen</h1>
     <picture id="headshot-img">
-      <source media="(max-width: 640px)" srcset="static/images/Me-small.jpg" alt="Justin and vape smoke small">
+      <source media="(max-width: 768px)" srcset="static/images/Me-small.jpg" alt="Justin and vape smoke small" id="justinImage">
       </source>
-      <source media="(max-width: 1240px)" srcset="static/images/Me-med.jpg" alt="Justin and vape smoke medium">
+      <source media="(max-width: 1240px)" srcset="static/images/Me-med.jpg" alt="Justin and vape smoke medium" id="justinImage">
       </source>
-      <img src="static/images/Me-1920.jpg" alt="Justin and vape smoke or 'clouds' as they say">
+      <img src="static/images/Me-1920.jpg" alt="Justin and vape smoke or 'clouds' as they say" id="justinImage">
     </picture>
     <p class="digitalResume"><em>Digital Resume</em> of a</p>
     <p class="softwarestudent">Software Engineering Student</p>
@@ -47,8 +47,8 @@
   <main>
     <section id="content">
       <article>
-        <h2 class="exp-heading">Work Experience</h2>
-        <hr>
+        <h2 id="exp-heading" class="exp-heading">Work Experience</h2>
+        <hr class="bodyLine2">
         <div class="workHeadingDuration">
           <h3>Cape Business Online</h3>
           <p class="dateDurationText">Jan 2018 - May 2022</p>
@@ -87,11 +87,10 @@
         </ol>
       </article>
       <article>
-        <h2 class="exp-heading">Education</h2>
+        <h2 id="education" class="exp-heading">Education</h2>
         <hr>
         <div class="workHeadingDuration">
-          <h3><a href="https://www.codespace.co.za/courses/software-engineering/" target="_blank">CodeSpace Academy</a>
-          </h3>
+          <h3>CodeSpace Academy</h3>
           <p class="dateDurationText">Jun 2022 - 2023</p>
         </div>
         <div class="roleContainer">
