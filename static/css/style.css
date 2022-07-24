@@ -220,10 +220,11 @@ h3 {
 /* Small devices (437px and below) */
 @media (max-width: 437px) {
   .workHeadingDuration {
-    text-align: center;
-    margin-bottom: -13px;
-    width: auto;
-    gap: 0;
+    flex-flow: column wrap;
+  }
+
+  #content {
+    margin-left: 0px;
   }
 
   .roleContainer {
@@ -243,10 +244,11 @@ h3 {
 /* Medium devices (768px and below) */
 @media (max-width: 768px) {
   .workHeadingDuration {
-    text-align: center;
-    margin-bottom: -13px;
-    width: auto;
-    gap: 0;
+    flex-flow: column wrap;
+  }
+
+  #content {
+    margin-left: 0px;
   }
 
   .roleContainer {
@@ -274,7 +276,7 @@ h3 {
     text-align: center;
     margin-bottom: -13px;
     width: auto;
-    gap: 0;
+    gap: 10px;
   }
 
   .roleContainer {
